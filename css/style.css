@@ -15,18 +15,26 @@ main{
     position: relative;
 }
 
-.container .d-block{
+.item{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+.active img{
     padding: 0;
     width: 100%;
     height: 500px;
     object-fit: cover;
 }
 
-.smaller{
+.smaller > *{
     object-position: 0px -350px;
 }
 
-.stray{
+.stray > *{
     object-position: top;
 }
 
@@ -37,20 +45,21 @@ main{
     border-radius: 50%;
 }
 
-.left,
-.right{
+#left,
+#right{
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 0px;
 }
 
-.left{
+#left{
     left: 20px;
     top: calc(250px - 25px);
 }
 
-.right{
+#right{
     right: 20px;
     top: calc(250px - 25px);
 }
