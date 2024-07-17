@@ -1,24 +1,56 @@
 /* 
-                    HEADER
-*/
-
-
-/* 
                     MAIN
 */
 
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-/* 
-                    FOOTER
-*/
+.container{
+    padding: 0;
+    height: 500px;
+    position: relative;
+}
 
+.container .d-block{
+    padding: 0;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
 
+.smaller{
+    object-position: 0px -350px;
+}
 
-/* 
-                    DEBUG
-*/
+.stray{
+    object-position: top;
+}
 
+.circle{
+    width: 50px;
+    height: 50px;
+    background-color: lightgray;
+    border-radius: 50%;
+}
 
-/* 
-                    RESPONSIVE
-*/
+.left,
+.right{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    left: 20px;
+    top: calc(250px - 25px);
+}
+
+.right{
+    right: 20px;
+    top: calc(250px - 25px);
+}
